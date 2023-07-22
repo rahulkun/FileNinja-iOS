@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Lf-DE-aUI">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vcE-YU-ebw">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="5Lf-DE-aUI" customClass="ViewController" customModule="FileNinja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="64j-rg-mW8">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peakpx" translatesAutoresizingMaskIntoConstraints="NO" id="cIl-n7-kq7">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oa4-Vh-RcV">
+                                <rect key="frame" x="55" y="214.33333333333334" width="320" height="50.000000000000028"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0OD-w6-XoM"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" textContentType="url"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2gp-4n-71j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2gp-4n-71j" firstAttribute="trailing" secondItem="oa4-Vh-RcV" secondAttribute="trailing" constant="55" id="3Ko-iH-f2W"/>
+                            <constraint firstItem="oa4-Vh-RcV" firstAttribute="centerY" secondItem="2gp-4n-71j" secondAttribute="centerY" multiplier="0.5" id="RKB-vB-4LH"/>
+                            <constraint firstItem="oa4-Vh-RcV" firstAttribute="leading" secondItem="2gp-4n-71j" secondAttribute="leading" constant="55" id="U6G-SW-fT3"/>
+                            <constraint firstAttribute="bottom" secondItem="cIl-n7-kq7" secondAttribute="bottom" id="gic-b6-KXo"/>
+                            <constraint firstAttribute="trailing" secondItem="cIl-n7-kq7" secondAttribute="trailing" id="grE-00-ikx"/>
+                            <constraint firstItem="cIl-n7-kq7" firstAttribute="top" secondItem="64j-rg-mW8" secondAttribute="top" id="yom-eU-toP"/>
+                            <constraint firstItem="cIl-n7-kq7" firstAttribute="leading" secondItem="64j-rg-mW8" secondAttribute="leading" id="zNS-UE-qNg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtURL" destination="oa4-Vh-RcV" id="L0t-a7-hmL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHE-L0-pev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="-81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="peakpx" width="1125" height="2436"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
